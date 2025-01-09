@@ -23,8 +23,9 @@ yolo:
 bbox_validation:
   iou_threshold: 0.9
 blur:
+  region: 'mask' # 'bbox' or 'mask'
   kernel_size: 31
   sigma_x: 19
 debug:
-  show_on_image: False
-  print_on_terminal: False
+  show_on_image: True
+  print_on_terminal: True
