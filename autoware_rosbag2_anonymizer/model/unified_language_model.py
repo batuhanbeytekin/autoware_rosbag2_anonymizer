@@ -117,12 +117,10 @@ class UnifiedLanguageModel:
                     self.class_map,
                 )
                 
-                if not self.open_clip_run and (is_inside or score > 0.20):
-                    print(f"OpenClip is not running")
+                if not self.open_clip_run and (is_inside):
                     valid_ids.append(index)
                     continue
                 elif self.open_clip_run:
-                    print(f"OpenClip is running")
                     # Run OpenClip
                     # and accept as a valid object if the score is greater than 0.9
                     detection_image = image[
