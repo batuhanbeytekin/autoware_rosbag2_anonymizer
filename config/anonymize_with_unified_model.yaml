@@ -1,6 +1,6 @@
 rosbag:
-  input_bags_folder: '/path/to/input_bag_folder'
-  output_bags_folder: '/path/to/output_folder'
+  input_bags_folder: '/media/bzeren/PortableSSD/YTU-DATA/rosbag2-anonymizer/input'
+  output_bags_folder: '/media/bzeren/PortableSSD/YTU-DATA/rosbag2-anonymizer/output'
   output_save_compressed_image: True
   output_storage_id: 'mcap' # 'sqlite3' or 'mcap'
 grounding_dino:
@@ -13,6 +13,7 @@ segment_anything_2:
   model_cfg: 'configs/sam2.1/sam2.1_hiera_s.yaml'
   checkpoint_path: './sam2.1_hiera_small.pt'
 openclip:
+  run: True
   model_name: 'ViT-B-32'
   pretrained_model: 'laion2b_s34b_b79k'
   score_threshold: 0.7
