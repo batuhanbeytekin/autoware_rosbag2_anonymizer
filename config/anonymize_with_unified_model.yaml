@@ -1,6 +1,6 @@
 rosbag:
-  input_bags_folder: '/media/bzeren/PortableSSD/YTU-DATA/rosbag2-anonymizer/input'
-  output_bags_folder: '/media/bzeren/PortableSSD/YTU-DATA/rosbag2-anonymizer/output'
+  input_bag_path: '/path/to/input_bag_file'
+  output_bag_path: '/path/to/output_bag_file'
   output_save_compressed_image: True
   output_storage_id: 'mcap' # 'sqlite3' or 'mcap'
 grounding_dino:
